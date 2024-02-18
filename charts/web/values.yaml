@@ -1,6 +1,7 @@
 image: traefik/whoami:latest
 replicaCount: 1
 host: example.com
+tlsName: ""
 
 nameOverride: ""
 fullnameOverride: ""
