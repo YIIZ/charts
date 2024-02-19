@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   web:
   - apiVersion: v2
+    created: "2024-02-19T08:44:55.197911168Z"
+    description: A Helm chart for Kubernetes
+    digest: f5980dcbd1c34fba9bd5fd615aa96296aaf2761912dd293b18f8220b60e6d40a
+    name: web
+    type: application
+    urls:
+    - https://github.com/YIIZ/charts/releases/download/web-0.1.1/web-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2024-02-19T01:13:51.932203637Z"
     description: A Helm chart for Kubernetes
     digest: 2ad5be8a1787121cbee864325f4bf8bdc6d6e76f60ca868af8a9efe4c0a56d1e
@@ -10,4 +19,4 @@ entries:
     urls:
     - https://github.com/YIIZ/charts/releases/download/web-0.1.0/web-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-19T01:13:51.932215138Z"
+generated: "2024-02-19T08:44:55.197965259Z"
