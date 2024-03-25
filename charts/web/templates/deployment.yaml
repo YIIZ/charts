@@ -34,13 +34,16 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{- with .Values.volumeMounts }}
+          {{- if .Values.pvc }}
           volumeMounts:
-            {{- toYaml . | nindent 12 }}
+            - name: data
+              mountPath: /data
           {{- end }}
-      {{- with .Values.volumes }}
+      {{- if .Values.pvc }}
       volumes:
-        {{- toYaml . | nindent 8 }}
+        - name: data
+          persistentVolumeClaim: 
+            claimName: {{ include "helper.fullname" . }}
       {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:

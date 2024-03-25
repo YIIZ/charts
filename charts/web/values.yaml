@@ -8,3 +8,4 @@ fullnameOverride: ""
 
 env: {}
 resources: {}
+pvc: 256Mi
